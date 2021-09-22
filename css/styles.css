@@ -1,0 +1,46 @@
+body {
+    background-color: #e7e1d3;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+h1 {
+    color: #c9c1ae;
+    font-size: 25px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+
+.timer {
+    /* position: absolute; */
+    top: 2rem;
+    font-size: 100px;
+    color: #868176;
+    font-weight: bold;
+    margin: 100px auto 20px;
+}
+
+.reference-text {
+    color: #b3aa99;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.input-val {
+    background-color: #f3ebdd;
+    font-size: 31px;
+    border: none;
+    outline: none;
+    height: 45px;
+    min-width: 50px;
+    width: 70%;
+    max-width: 750px;
+    resize: none;
+    margin: 20px auto;
+    padding: 20px 1rem;
+    border-radius: 20px;
+}
