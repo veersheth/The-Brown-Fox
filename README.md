@@ -1,2 +1,2 @@
 # The Brown Fox
-## A typing test
+A typing test
