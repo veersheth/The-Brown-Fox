@@ -1,7 +1,7 @@
 const referenceText = document.getElementById("referenceText")
 const inputVal = document.getElementById("inputVal")
 
-var totalIncorrect = 0
+var totalCorrect = 0
 
 inputVal.addEventListener('input', () => {
     const letters_array = referenceText.querySelectorAll('span')
@@ -18,13 +18,63 @@ inputVal.addEventListener('input', () => {
             {
             characterSpan.classList.add('correct')
             characterSpan.classList.remove('incorrect')
+            totalCorrect = totalCorrect + 1
+            console.log(totalCorrect);
         } else 
             // IF IT IS WRONG
              {
             characterSpan.classList.remove('correct')
             characterSpan.classList.add('incorrect')
-            totalIncorrect = totalIncorrect + 1
         }
+        startTimer()
     })
 })
 
+// TIMER FUNCTIONS
+
+const timer = document.getElementById('timer');
+
+var sec = 0;
+var msec = 0;
+var stoptime = true;
+
+function startTimer() {
+  if (stoptime == true) {
+        stoptime = false;
+        timerCycle();
+    }
+}
+function stopTimer() {
+  if (stoptime == false) {
+    stoptime = true;
+  }
+}
+
+function timerCycle() {
+    if (stoptime == false) {
+    msec = parseInt(msec);
+    sec = parseInt(sec);
+
+    msec = msec + 1;
+
+    if (msec == 60) {
+      sec = sec + 1;
+      msec = 0;
+    }
+
+    if (msec < 10 || msec == 0) {
+      msec = '0' + msec;
+    }
+    if (sec < 10 || sec == 0) {
+      sec = '0' + sec;
+    }
+
+    timer.innerHTML = sec + ':' + msec;
+
+    setTimeout("timerCycle()", 10);
+  }
+}
+
+function resetTimer() {
+    timer.innerHTML = '00:00';
+}
