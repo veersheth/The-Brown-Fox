@@ -50,6 +50,7 @@ function startTimer() {
 function stopTimer() {
   if (stoptime == false) {
     stoptime = true;
+    timer.classList.add("time-stopped")
   }
 }
 
