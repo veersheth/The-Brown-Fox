@@ -57,7 +57,7 @@ function timerCycle() {
 
     msec = msec + 1;
 
-    if (msec == 60) {
+    if (msec == 100) {
       sec = sec + 1;
       msec = 0;
     }
