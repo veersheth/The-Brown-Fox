@@ -1,3 +1,9 @@
+@keyframes grow-text {
+    from {font-size: 100px; text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); color: #868176;}
+    to {font-size: 120px; text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.466); color: white}
+  }
+  
+
 body {
     background-color: #e7e1d3;
     justify-content: center;
@@ -49,4 +55,13 @@ h1 {
 
 .incorrect {
     color: rgb(255, 171, 164);
+}
+
+.time-stopped {
+    animation-name: grow-text;
+    animation-duration: 1s;
+    font-size: 120px;
+    text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.466); 
+    color: white;
+
 }
