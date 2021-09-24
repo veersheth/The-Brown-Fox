@@ -1,20 +1,3 @@
-@keyframes timer-stopped {
-    from {font-size: 100px; 
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
-        width: 300px;
-        height: 150px;
-        margin: 100px auto 20px;
-    }
-    to {font-size: 120px; 
-        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055); 
-        width: 450px;
-        height: 170px;
-        margin: 100px auto 200px;
-    
-    }
-  }
-  
-
 body {
     background-color: #e7e1d3;
     justify-content: center;
@@ -30,8 +13,42 @@ h1 {
     font-weight: 400;
 }
 
+@keyframes timer-stopped {
+    from {font-size: 100px; 
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+        width: 300px;
+        height: 150px;
+        margin: 100px auto 20px;
+    }
+    to {font-size: 120px; 
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055); 
+        width: 450px;
+        height: 170px;
+        margin: 100px auto 125px;
+    
+    }
+  }
+
+
+@keyframes timer-reset {
+    from {
+        font-size: 120px; 
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055); 
+        width: 450px;
+        height: 170px;
+        margin: 100px auto 125px;
+    }
+    to {
+        font-size: 100px; 
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+        width: 300px;
+        height: 150px;
+        margin: 100px auto 20px;
+    }
+}
 
 .timer {
+    animation: timer-reset 1s;
     top: 2rem;
     width: 300px;
     height: 150px;
@@ -41,6 +58,16 @@ h1 {
     font-weight: bold;
     margin: 100px auto 20px;
 }
+
+.time-stopped {
+    animation: timer-stopped 1s;
+    font-size: 120px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055); 
+    width: 450px;
+    height: 170px;
+    margin-bottom: 125px;
+}
+
 
 .reference-text {
     color: #8f887a;
@@ -71,12 +98,54 @@ h1 {
     color: rgb(255, 171, 164);
 }
 
-.time-stopped {
-    animation-name: timer-stopped;
-    animation-duration: 1s;
-    font-size: 120px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055); 
-    width: 450px;
-    height: 170px;
-    margin-bottom: 200px;
+
+@keyframes refresh-hover {
+    0% {font-size: 18px; 
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+        width: 125px;
+        height: 60px;
+    }
+    100% {
+        font-size: 20px; 
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.068); 
+        width: 130px;
+        height: 65px;
+    }
+}
+
+@keyframes refresh-unhover {
+    0% {
+        font-size: 20px; 
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.068); 
+        width: 130px;
+        height: 65px;
+    }
+    100% {
+        font-size: 18px; 
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+        width: 125px;
+        height: 60px;
+    }
+}
+
+.refresh {
+    animation: refresh-unhover 0.5s;
+    width: 125px;
+    height: 60px;
+    background-color: #f3ebdd;
+    border-style: hidden;
+    border-radius: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    color: #777570;
+}
+
+.refresh:hover {
+    animation: refresh-hover 0.2s;
+    font-size: 20px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.068); 
+    width: 130px;
+    height: 65px;
+    cursor: pointer;
 }
