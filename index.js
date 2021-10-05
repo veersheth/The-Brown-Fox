@@ -82,3 +82,5 @@ function timerCycle() {
 function resetTimer() {
     timer.innerHTML = '00:00';
 }
+
+// TAB TO RESTART

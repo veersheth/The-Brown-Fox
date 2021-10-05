@@ -13,6 +13,10 @@ h1 {
     font-weight: 400;
 }
 
+a{
+    margin: 30px auto auto auto;
+}
+
 @keyframes timer-stopped {
     from {font-size: 100px; 
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
@@ -45,6 +49,45 @@ h1 {
         height: 150px;
         margin: 100px auto 20px;
     }
+}
+
+.navigation {
+    width: 80px;
+    height: 45px;
+    background-color: #f3ebdd;
+    border-style: hidden;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #777570;
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+@keyframes navigation-hover {
+    0% {
+        width: 80px;
+        height: 45px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+        font-size: 20px;
+
+    }
+    100% {
+        width: 90px;
+        height: 55px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+        font-size: 23px;
+    }
+}
+
+.navigation:hover {
+    animation: navigation-hover 0.3s;
+    width: 90px;
+    height: 55px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+    font-size: 23px;
+    cursor: pointer;
 }
 
 .timer {
