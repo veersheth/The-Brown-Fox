@@ -17,40 +17,6 @@ a{
     margin: 30px auto auto auto;
 }
 
-@keyframes timer-stopped {
-    from {font-size: 100px; 
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
-        width: 300px;
-        height: 150px;
-        margin: 100px auto 20px;
-    }
-    to {font-size: 120px; 
-        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055); 
-        width: 450px;
-        height: 170px;
-        margin: 100px auto 125px;
-    
-    }
-  }
-
-
-@keyframes timer-reset {
-    from {
-        font-size: 120px; 
-        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055); 
-        width: 450px;
-        height: 170px;
-        margin: 100px auto 125px;
-    }
-    to {
-        font-size: 100px; 
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
-        width: 300px;
-        height: 150px;
-        margin: 100px auto 20px;
-    }
-}
-
 .navigation {
     width: 80px;
     height: 45px;
@@ -88,6 +54,40 @@ a{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
     font-size: 23px;
     cursor: pointer;
+}
+
+@keyframes timer-stopped {
+    from {font-size: 100px; 
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+        width: 300px;
+        height: 150px;
+        margin: 100px auto 20px;
+    }
+    to {font-size: 120px; 
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055); 
+        width: 450px;
+        height: 170px;
+        margin: 100px auto 125px;
+    
+    }
+  }
+
+
+@keyframes timer-reset {
+    from {
+        font-size: 120px; 
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055); 
+        width: 450px;
+        height: 170px;
+        margin: 100px auto 125px;
+    }
+    to {
+        font-size: 100px; 
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+        width: 300px;
+        height: 150px;
+        margin: 100px auto 20px;
+    }
 }
 
 .timer {
@@ -191,4 +191,28 @@ a{
     width: 130px;
     height: 65px;
     cursor: pointer;
+}
+
+
+
+/* ABOUT ABOUT ABOUT */
+.about {
+    color: #928c81;
+    font-size: 25px;
+    width: 800px;
+    text-align: justify;
+    margin: 100px auto 10px;
+}
+
+.about-dev {
+    color: #a5a094;
+    font-size: 20px;
+    width: 800px;
+    text-align: justify;
+    margin: auto;
+}
+
+.links {
+    margin: 20px 20px;
+    color:rgb(110, 104, 94)
 }
