@@ -1,16 +1,10 @@
 body {
     background-color: #e7e1d3;
+    margin: 0;
+    padding: 0;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Roboto Mono', monospace; 
-}
-
-h1 {
-    color: #c9c1ae;
-    font-size: 25px;
-    margin-top: 50px;
-    font-weight: 400;
 }
 
 a{
@@ -62,6 +56,17 @@ a{
     }
 }
 
+.nav-bar {
+    margin: 20px;
+}
+
+.title {
+    color: #c9c1ae;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+}
+
 .navigation {
     animation: navigation-unhover 0.1s;
     width: 80px;
@@ -72,9 +77,6 @@ a{
     font-size: 16px;
     color: #777570;
     font-family: 'Roboto Mono', monospace;
-    position: absolute;
-    right: 20px;
-    top: 10px;
 }
 
 .navigation:hover {
@@ -119,6 +121,10 @@ a{
         height: 150px;
         margin: 100px auto 20px;
     }
+}
+
+.play-area {
+    text-align: center;
 }
 
 .timer {
