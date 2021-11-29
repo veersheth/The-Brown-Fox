@@ -250,6 +250,10 @@ a{
 }
 
 .links {
+    text-align: center;
+}
+
+.link {
     margin: 20px 20px;
-    color:rgb(110, 104, 94)
+    color:rgb(110, 104, 94);
 }
