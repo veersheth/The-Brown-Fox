@@ -1,7 +1,7 @@
 # The Brown Fox 🦊
 The Brown Fox is typing test with a clean UI. 
 
-### [https://veer258.github.io/The-Brown-Fox](https://veer258.github.io/The-Brown-Fox/)
+### [https://veersheth.github.io/The-Brown-Fox](https://veersheth.github.io/The-Brown-Fox/)
 
 You type the popular pangram out, and that's it - the test is as simple as it gets. 
 
